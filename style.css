@@ -1,0 +1,22 @@
+* {
+box-sizing: border-box;    
+margin: 0px;
+padding: 0px;
+}
+.page{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+width: 100%;    
+background-color: aliceblue;
+padding:10vh 10vw;
+}
+#container {
+display: flex;
+flex-wrap: wrap;
+width: 80vw;
+height: 80vh;   
+border: thin solid black; 
+background-color: white;
+}
