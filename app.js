@@ -9,7 +9,6 @@ const popupHolder = document.querySelector(".PopupHolder")
 
 resetButtoon.addEventListener("click", () => {popupHolder.style.display = "flex"})
 popupSubmit.addEventListener("click", popupvaule)
-popupHolder.addEventListener("click", () => popupHolder.style.display = "none")
 
 
 let randomColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
@@ -17,8 +16,8 @@ let side1 = 16;
 let side2 = 16
 
 
-function popupvaule() {
-
+function popupvaule(event) {
+event.stopPropagation()
 side1 = popupLeftSideInput.value    
 side2 = popuptopSideInput.value
 etchASketchContainer.innerHTML = ""
