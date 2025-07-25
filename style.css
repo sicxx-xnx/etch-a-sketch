@@ -2,9 +2,11 @@
 box-sizing: border-box;    
 margin: 0px;
 padding: 0px;
+background-color: white;
 }
 .page{
 display: flex;
+flex-direction: column;
 justify-content: center;
 align-items: center;
 height: 100%;
@@ -15,8 +17,16 @@ padding:10vh 10vw;
 #container {
 display: flex;
 flex-wrap: wrap;
-width: 80vw;
-height: 80vh;   
+width: 1000px;
+height: 1000px;   
 border: thin solid black; 
 background-color: white;
+flex-direction: column;
+align-content: start;
+align-items: start;
+/* flex: 1 0 50; */
+}
+.reset {
+width: 100px;
+height: 85px;    
 }
